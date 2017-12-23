@@ -1,0 +1,40 @@
+
+//[logType, collectTime, hostName, fileName, appName, domain, ip, topic, fileOffset, fileNode, sortedId]
+message LogBean {
+    optional string LogType = 1;
+    optional string CollectTime = 2;
+    optional string HostName = 3;
+    optional string FileName = 4;
+    optional string AppName = 5;
+    optional string Domain = 6;
+    optional string Ip = 7;
+    optional string Topic = 8;
+    optional string FileOffset = 9;
+    optional string FileNode = 10;
+    optional string SortedId = 11;
+    optional string Body = 12;
+}
+message Metrics {
+    optional string Endpoint = 1;
+    optional string Metric = 2;
+    optional string Value = 3;
+    optional int64 Step = 4;
+    optional string Type = 5;
+    optional string Tags = 6;
+    optional int64 Timestamp = 7;
+}
+message BaseInfo {
+    required int32 ProtocalVersion = 1;
+    required int32 Cmd = 2;
+    optional int64 ReqId = 3;
+    optional string ExtendParams = 4;
+}
+message Request {
+    required BaseInfo BaseInfo = 1;
+    repeated LogBean Logs = 2;
+    repeated Metrics MertricsValue = 3;
+}
+message Response {
+    required BaseInfo BaseInfo = 1;
+}
+
