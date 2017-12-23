@@ -1,0 +1,24 @@
+# Created by .ignore support plugin (hsz.mobi)
+*.jar
+*.war
+*.class
+*.lock
+*.DS_Store
+*.swp
+*.out
+target/
+*.iml
+*.ipr
+*.iws
+*.bak
+.settings/
+.classpath
+.project
+.metadata/
+.idea/
+logs/
+*.log
+dependency-reduced-pom.xml
+/bin
+git
+git.pub
