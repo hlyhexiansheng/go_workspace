@@ -2,42 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40fc2fe8-e2e7-49c8-8db7-c7afc0abff49" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/beego/test1.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/go_lang/routine/test_max_goroutine.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/goroutine.go" afterPath="$PROJECT_DIR$/src/test/go_lang/routine/goroutine.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/testInterface.go" afterPath="$PROJECT_DIR$/src/test/go_lang/interface/testInterface.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/testIpAndHostName.go" afterPath="$PROJECT_DIR$/src/test/go_lang/network/testIpAndHostName.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/test_channel1.go" afterPath="$PROJECT_DIR$/src/test/go_lang/channel/test_channel1.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/test_channel2.go" afterPath="$PROJECT_DIR$/src/test/go_lang/channel/test_channel2.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/test_channel3.go" afterPath="$PROJECT_DIR$/src/test/go_lang/channel/test_channel3.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/test_channel4.go" afterPath="$PROJECT_DIR$/src/test/go_lang/channel/test_channel4.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/test_curl.go" afterPath="$PROJECT_DIR$/src/test/go_lang/http/test_curl.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/test_fileutil.go" afterPath="$PROJECT_DIR$/src/test/go_lang/file/test_fileutil.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/test_for_return.go" afterPath="$PROJECT_DIR$/src/test/go_lang/other/test_for_return.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/test_http.go" afterPath="$PROJECT_DIR$/src/test/go_lang/http/test_http.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/test_interface.go" afterPath="$PROJECT_DIR$/src/test/go_lang/interface/test_interface.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/test_interface2.go" afterPath="$PROJECT_DIR$/src/test/go_lang/interface/test_interface2.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/test_json.go" afterPath="$PROJECT_DIR$/src/test/go_lang/json/test_json.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/test_panic.go" afterPath="$PROJECT_DIR$/src/test/go_lang/panic/test_panic.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/test_pb.go" afterPath="$PROJECT_DIR$/src/test/go_lang/pb/test_pb.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/test_pb2.go" afterPath="$PROJECT_DIR$/src/test/go_lang/pb/test_pb2.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/test_round.go" afterPath="$PROJECT_DIR$/src/test/go_lang/math/test_round.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/test_sleep.go" afterPath="$PROJECT_DIR$/src/test/go_lang/timer/test_sleep.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/test_slice.go" afterPath="$PROJECT_DIR$/src/test/go_lang/other/test_slice.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/test_snowflakedid.go" afterPath="$PROJECT_DIR$/src/test/go_lang/other/test_snowflakedid.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/test_socket.go" afterPath="$PROJECT_DIR$/src/test/go_lang/network/test_socket.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/test_taildirSource.go" afterPath="$PROJECT_DIR$/src/test/go_lang/agent/test_taildirSource.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/test_taildirconfig.go" afterPath="$PROJECT_DIR$/src/test/go_lang/agent/test_taildirconfig.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/test_tailfile.go" afterPath="$PROJECT_DIR$/src/test/go_lang/agent/test_tailfile.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/test_tcpclient.go" afterPath="$PROJECT_DIR$/src/test/go_lang/network/test_tcpclient.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/test_tick.go" afterPath="$PROJECT_DIR$/src/test/go_lang/timer/test_tick.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/test_tick2.go" afterPath="$PROJECT_DIR$/src/test/go_lang/timer/test_tick2.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/test_time.go" afterPath="$PROJECT_DIR$/src/test/go_lang/timer/test_time.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/testing2.go" afterPath="$PROJECT_DIR$/src/test/go_lang/other/testing2.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/testing3.go" afterPath="$PROJECT_DIR$/src/test/go_lang/other/testing3.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/testing_interface3.go" afterPath="$PROJECT_DIR$/src/test/go_lang/interface/testing_interface3.go" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/testproperties.go" afterPath="$PROJECT_DIR$/src/test/go_lang/other/testproperties.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/go_lang/interface/test_interface2.go" afterPath="$PROJECT_DIR$/src/test/go_lang/interface/test_interface2.go" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -111,11 +77,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_round.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test_round.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/go_lang/math/test_round.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="13" column="41" lean-forward="false" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+            <state relative-caret-position="68">
+              <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_interface.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/go_lang/interface/test_interface.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="427">
+              <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_interface2.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/go_lang/interface/test_interface2.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -199,6 +185,7 @@
         <option value="$PROJECT_DIR$/src/test/test_http.go" />
         <option value="$PROJECT_DIR$/src/test/test_max_goroutine.go" />
         <option value="$PROJECT_DIR$/src/test/beego/test1.go" />
+        <option value="$PROJECT_DIR$/src/test/go_lang/interface/test_interface2.go" />
       </list>
     </option>
   </component>
@@ -302,7 +289,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="other" />
+              <option name="myItemId" value="interface" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -321,256 +308,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go_lang" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="network" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go_workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go_workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beego" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go_workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go_workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my_bee_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go_workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go_workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my_bee_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go_workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go_workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my_bee_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go_workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go_workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my_bee_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go_workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go_workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my_bee_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go_workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go_workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my_bee_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go_workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go_workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my_bee_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go_workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go_workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my_bee_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="conf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go_workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go_workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go_workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="go_workspace" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="github.com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="astaxie" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="beego" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -645,14 +382,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Application.Build test_channel1.go and run">
-    <configuration default="false" name="Build test_http.go and run" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
-      <module name="go_workspace" />
-      <working_directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/src/test/test_http.go" />
-      <kind value="FILE" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Go Application.Build test_interface2.go and run">
     <configuration default="false" name="Build test_max_goroutine.go and run" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="go_workspace" />
       <working_directory value="$PROJECT_DIR$" />
@@ -678,6 +408,13 @@
       <module name="go_workspace" />
       <working_directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/src/test/go_lang/channel/test_channel1.go" />
+      <kind value="FILE" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Build test_interface2.go and run" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+      <module name="go_workspace" />
+      <working_directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/src/test/go_lang/interface/test_interface2.go" />
       <kind value="FILE" />
       <method />
     </configuration>
@@ -1280,19 +1017,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Go Application.Build test_http.go and run" />
-      <item index="1" class="java.lang.String" itemvalue="Go Application.Build test_max_goroutine.go and run" />
-      <item index="2" class="java.lang.String" itemvalue="Go Application.Build test1.go and run" />
-      <item index="3" class="java.lang.String" itemvalue="Go Application.Build main.go and run" />
-      <item index="4" class="java.lang.String" itemvalue="Go Application.Build test_channel1.go and run" />
+      <item index="0" class="java.lang.String" itemvalue="Go Application.Build test_max_goroutine.go and run" />
+      <item index="1" class="java.lang.String" itemvalue="Go Application.Build test1.go and run" />
+      <item index="2" class="java.lang.String" itemvalue="Go Application.Build main.go and run" />
+      <item index="3" class="java.lang.String" itemvalue="Go Application.Build test_channel1.go and run" />
+      <item index="4" class="java.lang.String" itemvalue="Go Application.Build test_interface2.go and run" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Go Application.Build test_channel1.go and run" />
-        <item index="1" class="java.lang.String" itemvalue="Go Application.Build main.go and run" />
-        <item index="2" class="java.lang.String" itemvalue="Go Application.Build test1.go and run" />
-        <item index="3" class="java.lang.String" itemvalue="Go Application.Build test_max_goroutine.go and run" />
-        <item index="4" class="java.lang.String" itemvalue="Go Application.Build test_http.go and run" />
+        <item index="0" class="java.lang.String" itemvalue="Go Application.Build test_interface2.go and run" />
+        <item index="1" class="java.lang.String" itemvalue="Go Application.Build test_channel1.go and run" />
+        <item index="2" class="java.lang.String" itemvalue="Go Application.Build main.go and run" />
+        <item index="3" class="java.lang.String" itemvalue="Go Application.Build test1.go and run" />
+        <item index="4" class="java.lang.String" itemvalue="Go Application.Build test_max_goroutine.go and run" />
       </list>
     </recent_temporary>
   </component>
@@ -1315,7 +1052,7 @@
       <workItem from="1513929058128" duration="12113000" />
       <workItem from="1514232089078" duration="784000" />
       <workItem from="1514357251560" duration="15520000" />
-      <workItem from="1514923281474" duration="32928000" />
+      <workItem from="1514923281474" duration="34465000" />
     </task>
     <task id="LOCAL-00001" summary="add ignore">
       <created>1513992432250</created>
@@ -1352,14 +1089,29 @@
       <option name="project" value="LOCAL" />
       <updated>1515462883542</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add updater">
+      <created>1515479366976</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1515479366976</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add bee test project.">
+      <created>1515479416350</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1515479416350</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64225000" />
+    <option name="totallyTimeSpent" value="65762000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="828" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1380,9 +1132,9 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34929577" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34929577" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59577465" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2639485" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2639485" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891247" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1404,7 +1156,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add ignore" />
     <MESSAGE value="add updater" />
-    <option name="LAST_COMMIT_MESSAGE" value="add updater" />
+    <MESSAGE value="add bee test project." />
+    <option name="LAST_COMMIT_MESSAGE" value="add bee test project." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1417,20 +1170,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/local/go/src/net/http/fs.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="708" column="5" lean-forward="false" selection-start-line="708" selection-start-column="5" selection-end-line="708" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ops-meta/http/tarball.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="70" lean-forward="true" selection-start-line="28" selection-start-column="70" selection-end-line="28" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ops-updater/control">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1817,8 +1556,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/go_lang/math/test_round.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="41" lean-forward="false" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
+        <state relative-caret-position="68">
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/go_lang/interface/test_interface.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/go_lang/interface/test_interface2.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
           <folding />
         </state>
       </provider>

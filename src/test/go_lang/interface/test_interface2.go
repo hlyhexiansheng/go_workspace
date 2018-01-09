@@ -7,22 +7,25 @@ type Person struct {
 	age  int
 }
 
-type human interface {
+type Human interface {
 	say()
 	eat()
 }
 
-func (p *Person) say()  {
-	fmt.Printf("say:%+v\n",p)
-	p.name = "fadsas"
+func (this *Person) say() {
+	fmt.Printf("say:%+v\n", this)
+	this.name = "change_it"
+}
+
+func (this *Person)  eat() {
+	fmt.Printf("eat:%+v\n", this)
+	this.name = "change_it_again"
 }
 
 func main() {
-	p1 := Person{name:"123", age:1}
+	var human Human = &Person{name:"123", age:1}
+	human.say()
+	human.eat()
 
-	fmt.Println(p1)
-	//fmt.Println(*p1)
-	p1.say()
-	fmt.Println(p1)
-
+	fmt.Printf("final val=%+v\n", human)
 }
