@@ -2,11 +2,77 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40fc2fe8-e2e7-49c8-8db7-c7afc0abff49" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/github.com/astaxie/beego" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/go_lang/http/http_server.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/go_lang/interface/test_interface4.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/go_lang/struct/nonmouys.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/go_lang/template/test_temlate.go" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/astaxie/beego.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/astaxie/beego/config.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/astaxie/beego/context.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/astaxie/beego/context/param.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/astaxie/beego/grace.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/astaxie/beego/logs.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/astaxie/beego/session.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/astaxie/beego/toolbox.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/astaxie/beego/utils.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/cmd.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/cmd/commands.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/cmd/commands/api.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/cmd/commands/bale.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/cmd/commands/beefix.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/cmd/commands/dlv.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/cmd/commands/dockerize.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/cmd/commands/generate.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/cmd/commands/hprose.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/cmd/commands/migrate.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/cmd/commands/new.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/cmd/commands/pack.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/cmd/commands/rs.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/cmd/commands/run.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/cmd/commands/server.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/cmd/commands/version.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/config.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/generate.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/generate/swaggergen.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/logger.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/logger/colors.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/utils.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/vendor/github.com/astaxie/beego/swagger.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/vendor/github.com/astaxie/beego/utils.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/vendor/github.com/derekparker/delve/config.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/vendor/github.com/derekparker/delve/dwarf/frame.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/vendor/github.com/derekparker/delve/dwarf/line.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/vendor/github.com/derekparker/delve/dwarf/op.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/vendor/github.com/derekparker/delve/dwarf/reader.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/vendor/github.com/derekparker/delve/dwarf/util.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/vendor/github.com/derekparker/delve/proc.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/vendor/github.com/derekparker/delve/service.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/vendor/github.com/derekparker/delve/service/api.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/vendor/github.com/derekparker/delve/service/debugger.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/vendor/github.com/derekparker/delve/service/rpc1.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/vendor/github.com/derekparker/delve/service/rpc2.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/vendor/github.com/derekparker/delve/service/rpccommon.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/vendor/github.com/derekparker/delve/terminal.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/vendor/github.com/derekparker/delve/version.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/vendor/github.com/fsnotify/fsnotify.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/vendor/github.com/go-sql-driver/mysql.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/vendor/github.com/gorilla/websocket.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/vendor/github.com/lib/pq.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/vendor/github.com/lib/pq/oid.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/vendor/github.com/peterh/liner.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/vendor/golang.org/x/debug/dwarf.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/vendor/golang.org/x/debug/macho.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/vendor/golang.org/x/sys/unix.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/vendor/gopkg.in/yaml.v2.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/beego/bee/vendor/rsc.io/x86/x86asm.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/kardianos/osext.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/sumory/gotty.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/sumory/gotty/buffer.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/sumory/gotty/client.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/sumory/gotty/codec.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/sumory/gotty/config.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/sumory/gotty/server.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/sumory/gotty/session.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/sumory/gotty/utils.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/github.com/sumory/log4go.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/my_bee_project/controllers.a" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pkg/darwin_amd64/my_bee_project/routers.a" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,8 +132,8 @@
       <file leaf-file-name="template.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/github.com/astaxie/beego/template.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="58" column="9" lean-forward="false" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+            <state relative-caret-position="253">
+              <caret line="57" column="45" lean-forward="true" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -1310,7 +1376,7 @@
       <workItem from="1513929058128" duration="12113000" />
       <workItem from="1514232089078" duration="784000" />
       <workItem from="1514357251560" duration="15520000" />
-      <workItem from="1514923281474" duration="62717000" />
+      <workItem from="1514923281474" duration="62824000" />
     </task>
     <task id="LOCAL-00001" summary="add ignore">
       <created>1513992432250</created>
@@ -1368,11 +1434,25 @@
       <option name="project" value="LOCAL" />
       <updated>1515480894878</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="test interface.">
+      <created>1515576343563</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1515576343563</updated>
+    </task>
+    <task id="LOCAL-00010" summary="test interface.">
+      <created>1515576381419</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1515576381419</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94014000" />
+    <option name="totallyTimeSpent" value="94121000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="828" extended-state="0" />
@@ -1397,7 +1477,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32957748" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34929577" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59577465" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2639485" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1856,8 +1936,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/github.com/astaxie/beego/template.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="58" column="9" lean-forward="false" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+        <state relative-caret-position="253">
+          <caret line="57" column="45" lean-forward="true" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="45" />
           <folding />
         </state>
       </provider>
