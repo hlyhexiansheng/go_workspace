@@ -15,7 +15,7 @@ import (
 
 func main() {
 
-	log.Println("start elog-falcon")
+	log.Println("start elog-falcon ")
 
 	cfg := flag.String("c", "cfg.json", "configuration file")
 	version := flag.Bool("v", false, "show version")

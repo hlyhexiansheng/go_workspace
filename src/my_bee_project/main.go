@@ -6,6 +6,9 @@ import (
 )
 
 func main() {
+	//beego.SetLogger("file", `{"filename":"test.log"}`)
+	beego.SetLevel(beego.LevelDebug)
+	beego.SetLogFuncCall(true)
 	beego.Run()
 }
 
