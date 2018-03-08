@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	//testGetLogFile();
+	testGetLogFile();
 
 	//testFileExist()
 
@@ -20,7 +20,7 @@ func main() {
 
 	//testOpenFileAndReadAll();
 
-	testWriteFile()
+	//testWriteFile()
 
 }
 func ResolveLink() {
@@ -42,16 +42,10 @@ func testFileExist() {
 }
 
 func testGetLogFile() {
-	filelist := logfile.GetAllFile("/Users/noodles/logs", "txt$")
-	for i := 0; i < len(filelist); i++ {
-		fmt.Println(filelist[i].FullName)
-	}
-
+	filelist := logfile.GetAllFile("/Users/noodles/logs", "log$",true)
 	for ix, season := range filelist {
 		fmt.Printf("Season %d is: %s, %s\n", ix, season.FullName, season.Belong2dir)
 	}
-
-	fmt.Println(filelist)
 }
 
 func testSelfPath() {

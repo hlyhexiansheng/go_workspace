@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"log"
 	"errors"
-	"agent/g"
 )
 
 type PosFileManager struct {
@@ -27,7 +26,7 @@ func (this *PosFileManager) Init(configM *DirConfigManager, posFileName string) 
 }
 
 func (this *PosFileManager) Refresh() {
-	allList := this.findDirAllFile(this.ConfigManager.WatDirConfDef)
+	allList := this.FindDirAllFile(this.ConfigManager)
 
 	oldPosInfoList := this.loadOldPosInfo()
 
@@ -80,7 +79,7 @@ func (this *PosFileManager) loadOldPosInfo() []*FileStruct {
 	byteArray, err := OpenFileAndReadAll(this.PosFileName)
 	if (err != nil) {
 		log.Println("read postion file error.", err)
-		panic("read postion file error." )
+		panic("read postion file error.")
 		return nil
 	}
 	posList := make([]*FileStruct, 0);
@@ -90,22 +89,24 @@ func (this *PosFileManager) loadOldPosInfo() []*FileStruct {
 	return posList
 }
 
-func (this *PosFileManager) findDirAllFile(defMap map[string]*g.WatcherDirConfigDef) []*FileStruct {
-	fsl, err := this.getAllFileByWatchConfig(defMap)
+func (this *PosFileManager) FindDirAllFile(configManager *DirConfigManager) []*FileStruct {
+	fsl, err := this.getAllFileByWatchConfig(configManager)
 	if err != nil {
 		log.Panic("parse to prop error")
 	}
 	return fsl
 }
 
-func (this *PosFileManager) getAllFileByWatchConfig(dirConfig map[string]*g.WatcherDirConfigDef) ([]*FileStruct, error) {
-	if len(dirConfig) == 0 {
+func (this *PosFileManager) getAllFileByWatchConfig(configManager *DirConfigManager) ([]*FileStruct, error) {
+	if len(configManager.WatDirConfDef) == 0 {
 		return nil, errors.New("the dirs size is 0")
 	}
 	list := make([]*FileStruct, 0)
-	for path, config := range dirConfig {
-		tmpList := GetAllFile(path, config.Config["filterKey"])
-		list = append(list, tmpList...)
+	for path, _ := range configManager.WatDirConfDef {
+		tmpFileList := GetAllFile(path,
+			configManager.GetStringConfigByWatcherDir(path, "filterKey", "(.log$|.txt$|.tmp$)"),
+			configManager.GetBoolConfigByWatcherDir(path, "recursion", true))
+		list = append(list, tmpFileList...)
 	}
 	return list, nil
 }

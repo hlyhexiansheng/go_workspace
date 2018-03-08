@@ -20,7 +20,8 @@
           "isReadFromEnd": "false",
           "startPrefix": "91",
           "maxLineSize": "10001",
-          "maxOnceReadCount": "701"
+          "maxOnceReadCount": "701",
+          "recursion":"true"
         }
       }
     ]

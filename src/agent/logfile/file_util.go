@@ -9,28 +9,42 @@ import (
 	"strconv"
 	"io/ioutil"
 	"errors"
+	"sync"
 )
 
-var fileList []*FileStruct
-var filterKey string
+var (
+	lock = new(sync.RWMutex)
+)
 
-func GetAllFile(dir string, filter string) []*FileStruct {
+func GetAllFile(dir string, filter string, recursion bool) []*FileStruct {
 
-	if filter == "" {
-		filterKey = "(.log$|.txt$|.tmp$)"
-	} else {
-		filterKey = filter
+	lock.Lock()
+	defer lock.Unlock()
+
+	fileList := make([]*FileStruct, 0)
+
+	on_each_file := func(path string, fileInfo os.FileInfo, err error) error {
+		if fileInfo == nil {
+			return nil
+		}
+		isMatch, _ := regexp.MatchString(filter, fileInfo.Name())
+		if (!isMatch) {
+			return nil
+		}
+		stat, isMatch := fileInfo.Sys().(*syscall.Stat_t)
+		if (!isMatch || fileInfo.IsDir()) {
+			return nil
+		}
+		if !recursion && (dir + "/" + fileInfo.Name()) != path { //是否递归
+			return nil
+		}
+
+		file_struct := &FileStruct{FileNode:strconv.FormatUint(stat.Ino, 10), FullName:path, Belong2dir:dir}
+		fileList = append(fileList, file_struct)
+
+		return nil
 	}
-
-	//clear the list
-	fileList = make([]*FileStruct, 0)
-
 	filepath.Walk(dir, on_each_file)
-
-	//add Belong2dir info
-	for _, file := range fileList {
-		file.Belong2dir = dir
-	}
 	return fileList
 }
 
@@ -129,24 +143,5 @@ func SelfPath() string {
 	return path
 }
 
-func on_each_file(path string, fileInfo os.FileInfo, err error) error {
-	if fileInfo == nil {
-		return nil
-	}
 
-	isMatch, _ := regexp.MatchString(filterKey, fileInfo.Name())
-	if (!isMatch) {
-		return nil
-	}
-
-	stat, isMatch := fileInfo.Sys().(*syscall.Stat_t)
-	if (!isMatch || fileInfo.IsDir()) {
-		return nil
-	}
-
-	file_struct := &FileStruct{FileNode:strconv.FormatUint(stat.Ino, 10), FullName:path}
-	fileList = append(fileList, file_struct)
-
-	return nil
-}
 

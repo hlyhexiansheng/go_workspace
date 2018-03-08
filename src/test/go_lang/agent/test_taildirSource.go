@@ -19,7 +19,7 @@ func testInit() {
 	client := client.NewClient([]string{"localhost:4142"})
 	positionFileName := "/Users/noodles/logs/position.json"
 
-	configFile := "/Users/noodles/Documents/code/Documents/globalgrow/infrastructure/elog/trunk/flume-parent/conf/elog-falcon.json"
+	configFile := "/Users/noodles/Documents/go_workspace/src/agent/cfg.json"
 	g.ParseConfig(configFile)
 
 	source := logfile.NewTailDirSource(g.Config().CollectDirs.Dirs, positionFileName, client)
