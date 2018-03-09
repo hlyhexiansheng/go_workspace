@@ -6,11 +6,11 @@ import (
 )
 
 func main() {
-	//test1()
+	test1()
 	//test2();
 	//test3()
 	//test4()
-	test5()
+	//test5()
 
 }
 func test5() {
@@ -20,10 +20,10 @@ func test5() {
 		"/Users/noodles/Documents/go_workspace/src/test/read_file/test_material/test5.txt",
 		"/Users/noodles/logs",
 		0,
-		"^\\[INFO", 100, "appName", "domain", "topic", "logType")
+		"^\\[INFO", 100, 1000, "appName", "domain", "topic", "logType")
 	sum := 0
 	for ; ; {
-		result := tailFile.ReadMultiLine()
+		result, _ := tailFile.ReadMultiLine()
 
 		if len(result) == 0 {
 			fmt.Println("finish...", sum)
@@ -47,9 +47,9 @@ func test4() {
 		"/Users/noodles/Documents/go_workspace/src/test/read_file/test_material/test4.txt",
 		"/Users/noodles/logs",
 		0,
-		"^\\[INFO", 100, "appName", "domain", "topic", "logType")
+		"^\\[INFO", 100, 1000, "appName", "domain", "topic", "logType")
 
-	result := tailFile.ReadMultiLine()
+	result, _ := tailFile.ReadMultiLine()
 
 	fmt.Println("length=", len(result))
 
@@ -64,9 +64,9 @@ func test3() {
 		"/Users/noodles/Documents/go_workspace/src/test/read_file/test_material/test3.txt",
 		"/Users/noodles/logs",
 		0,
-		"^\\[INFO", 100, "appName", "domain", "topic", "logType")
+		"^\\[INFO", 100, 1000, "appName", "domain", "topic", "logType")
 
-	result := tailFile.ReadMultiLine()
+	result, _ := tailFile.ReadMultiLine()
 
 	fmt.Println("length=", len(result))
 
@@ -80,9 +80,9 @@ func test2() {
 		"/Users/noodles/Documents/go_workspace/src/test/read_file/test_material/test2.txt",
 		"/Users/noodles/logs",
 		0,
-		"^\\[INFO", 10, "appName", "domain", "topic", "logType")
+		"^\\[INFO", 10, 1000, "appName", "domain", "topic", "logType")
 
-	result := tailFile.ReadMultiLine()
+	result, _ := tailFile.ReadMultiLine()
 
 	fmt.Println("length=", len(result))
 
@@ -97,13 +97,13 @@ func test1() {
 		"/Users/noodles/Documents/go_workspace/src/test/read_file/test_material/test1.txt",
 		"/Users/noodles/logs",
 		0,
-		"^\\[INFO", 10, "appName", "domain", "topic", "logType")
+		"^\\[INFO", 10, 1000, "appName", "domain", "topic", "logType")
 
-	result := tailFile.ReadMultiLine()
+	result, offset := tailFile.ReadMultiLine()
 
 	fmt.Println("length=", len(result))
 
-	for _, v := range result {
-		fmt.Println(v)
+	for i, v := range result {
+		fmt.Println(v, "offset", offset[i])
 	}
 }

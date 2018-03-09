@@ -5,9 +5,10 @@ import (
 	"io"
 	"log"
 	"regexp"
+	"fmt"
 )
 
-const Buffer_Size = 100
+const Buffer_Size = 1024 * 1024
 
 type TailFile2 struct {
 	NewLineStartPreRegular string //标识新的一行开始的正则
@@ -16,6 +17,7 @@ type TailFile2 struct {
 	Belong2Dir             string
 	Offset                 int64
 	MaxLineSize            int    //一行最大的字节数
+	MaxOnceReadCount       int
 
 	AppName                string
 	Domain                 string
@@ -26,6 +28,11 @@ type TailFile2 struct {
 	buffer                 []byte
 	bufferCapacity         int
 	bufferPosition         int
+}
+
+func (this *TailFile2) String() string {
+	return fmt.Sprintf("tailfile2=[NewLineStartPreAscii:%d], [FileNode:%s],[FileName:%s],[Belong2Dir:%s],[Offset:%d],[MaxLineSize:%d],[UseDefaultLineStart:%v],[appname:%s],[domain:%s],[topic:%s],[logtype:%s]>",
+		this.NewLineStartPreRegular, this.FileNode, this.FileName, this.Belong2Dir, this.Offset, this.MaxLineSize, this.AppName, this.Domain, this.Topic, this.LogType)
 }
 
 type LineInfo struct {
@@ -39,6 +46,7 @@ func NewTailFile2(fileNode, fileName, belong2Dir string,
 offset int64,
 newLineStartPreRegular string,
 maxLineSize int,
+maxOnceReadCount int,
 appName string,
 domain string,
 topic string,
@@ -49,6 +57,7 @@ logType string) *TailFile2 {
 		Offset:offset,
 		NewLineStartPreRegular:newLineStartPreRegular,
 		MaxLineSize:maxLineSize,
+		MaxOnceReadCount:maxOnceReadCount,
 		AppName:appName,
 		Domain:domain,
 		Topic:topic,
@@ -59,7 +68,7 @@ logType string) *TailFile2 {
 	return tailFile
 }
 
-func (this *TailFile2) ReadMultiLine() []string {
+func (this *TailFile2) ReadMultiLine() ([]string,[]int64) {
 	//1.先读取一大块内容到buffer中
 	this.readChunk()
 
@@ -85,21 +94,23 @@ func (this *TailFile2) ReadMultiLine() []string {
 	}
 
 	//4.把读到行，拼接起来
-	result := make([]string, 0)
+	resultLine := make([]string, 0)
+	resultOffset := make([]int64, 0)
 	length := len(lines)
 	line := ""
 	for i := 0; i < length; i++ {
 		if lines[i].IsMatch {
 			line = lines[i].Content
+			resultOffset = append(resultOffset, this.Offset + int64(lines[i].Offset))
 		} else {
 			line = line + lines[i].Content
 		}
 		if i + 1 == length || lines[i + 1].IsMatch {
-			result = append(result, line)
+			resultLine = append(resultLine, line)
 			line = ""
 		}
 	}
-	return result
+	return resultLine, resultOffset
 }
 
 func (this *TailFile2) Commit() {

@@ -13,7 +13,7 @@ import (
 )
 
 type FileReaderWorker struct {
-	FileMap        map[string]*TailFile
+	FileMap        map[string]*TailFile2
 	client         *client.TcpClient
 	SnowflakeNode  *snowflake.Node
 
@@ -76,28 +76,34 @@ func (this *FileReaderWorker) ResumeRead() {
 }
 
 func (this *FileReaderWorker) ResetTailFile() {
-	this.FileMap = make(map[string]*TailFile, 0)
+	this.FileMap = make(map[string]*TailFile2, 0)
 	for _, fs := range this.posFileManager.PosInfoList {
 		fileNode := fs.FileNode
 		fullName := fs.FullName
 		belong2Dir := fs.Belong2dir
 		offset := fs.Offset
-		useDefaultLineStart := this.configManager.GetBoolConfigByWatcherDir(belong2Dir, "useDefaultLineStart", false)
-		startPrefix := this.configManager.GetIntConfigByWatcherDir(belong2Dir, "startPrefix", 91)
+
 		maxLineSize := this.configManager.GetIntConfigByWatcherDir(belong2Dir, "maxLineSize", 10000)
-		maxOnceReadCount := this.configManager.GetIntConfigByWatcherDir(belong2Dir, "maxOnceReadCount", 700)
+		maxOnceReadCount := this.configManager.GetIntConfigByWatcherDir(belong2Dir, "maxOnceReadCount", 10000)
+		newLineStartPreRegular := this.configManager.GetStringConfigByWatcherDir(belong2Dir, "newLineStartPreRegular", "")
 
 		appName := this.configManager.GetStringHeaderByWatcherDir(belong2Dir, "appName", "")
 		domain := this.configManager.GetStringHeaderByWatcherDir(belong2Dir, "domain", "")
 		topic := this.configManager.GetStringHeaderByWatcherDir(belong2Dir, "topic", appName)
 		logType := this.configManager.GetStringHeaderByWatcherDir(belong2Dir, "logType", "code")
 
-		tailFile := NewTailFile(fileNode, fullName, belong2Dir,
-			offset, useDefaultLineStart, int8(startPrefix), maxLineSize,
-			appName, domain, topic, logType, maxOnceReadCount)
+		tailFile := NewTailFile2(fileNode, fullName, belong2Dir,
+			offset,
+			newLineStartPreRegular,
+			maxLineSize,
+			maxOnceReadCount,
+			appName,
+			domain,
+			topic,
+			logType)
 
-		log.Println("%v", tailFile)
 		this.FileMap[tailFile.FileNode] = tailFile
+		log.Println("tailfile=", tailFile)
 	}
 }
 
@@ -107,17 +113,17 @@ func (this *FileReaderWorker) doReadFile() {
 	}
 }
 
-func (this *FileReaderWorker) readFile(tailFile *TailFile) {
+func (this *FileReaderWorker) readFile(tailFile *TailFile2) {
 	readCount := 0
 	for ; ; {
 		if this.pauseFlag || readCount > tailFile.MaxOnceReadCount {
 			break
 		}
 
-		if lines := tailFile.ReadMultiLine(); len(lines) == 0 {
+		if lines, offsets := tailFile.ReadMultiLine(); len(lines) == 0 {
 			break
 		} else {
-			if ok := this.sendLogs(lines, tailFile); ok {
+			if ok := this.sendLogs(lines, offsets, tailFile); ok {
 				tailFile.Commit()
 				readCount = readCount + len(lines)
 				this.posFileManager.UpdateOffset(tailFile.FileNode, tailFile.Offset)
@@ -129,15 +135,15 @@ func (this *FileReaderWorker) readFile(tailFile *TailFile) {
 	}
 }
 
-func (this *FileReaderWorker) sendLogs(lines []string, tailFile *TailFile) bool {
-	request := this.assembleLog(lines, tailFile)
+func (this *FileReaderWorker) sendLogs(lines []string, offsets []int64, tailFile *TailFile2) bool {
+	request := this.assembleLog(lines, offsets, tailFile)
 	_, OK := this.client.SendMsg(request, true)
 	return OK
 }
 
-func (this *FileReaderWorker) assembleLog(lines []string, tailFile *TailFile) *protocal.Request {
+func (this *FileReaderWorker) assembleLog(lines []string, offsets []int64, tailFile *TailFile2) *protocal.Request {
 	logItems := make([]*protocal.LogBean, 0)
-	for _, logLine := range lines {
+	for i, logLine := range lines {
 		bean := &protocal.LogBean{}
 		bean.LogType = proto.String(tailFile.LogType)
 		bean.CollectTime = proto.String(strconv.FormatInt(time.Now().Unix(), 10))
@@ -147,7 +153,7 @@ func (this *FileReaderWorker) assembleLog(lines []string, tailFile *TailFile) *p
 		bean.Domain = proto.String(tailFile.Domain)
 		bean.Ip = proto.String(GetIp())
 		bean.Topic = proto.String(tailFile.Topic)
-		bean.FileOffset = proto.String("0")
+		bean.FileOffset = proto.String(strconv.FormatInt(offsets[i], 10))
 		bean.FileNode = proto.String(tailFile.FileNode)
 		bean.SortedId = proto.String(this.SnowflakeNode.Generate().String())
 		bean.Body = proto.String(logLine)
