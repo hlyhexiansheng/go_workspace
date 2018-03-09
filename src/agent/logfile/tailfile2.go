@@ -11,6 +11,7 @@ import (
 const Buffer_Size = 1024 * 1024
 
 type TailFile2 struct {
+	NewLineStartMatchMode  int
 	NewLineStartPreRegular string //标识新的一行开始的正则
 	FileNode               string
 	FileName               string
@@ -44,6 +45,7 @@ type LineInfo struct {
 
 func NewTailFile2(fileNode, fileName, belong2Dir string,
 offset int64,
+newLineStartMatchMode int,
 newLineStartPreRegular string,
 maxLineSize int,
 maxOnceReadCount int,
@@ -55,6 +57,7 @@ logType string) *TailFile2 {
 		FileName:fileName,
 		Belong2Dir:belong2Dir,
 		Offset:offset,
+		NewLineStartMatchMode:newLineStartMatchMode,
 		NewLineStartPreRegular:newLineStartPreRegular,
 		MaxLineSize:maxLineSize,
 		MaxOnceReadCount:maxOnceReadCount,
@@ -68,10 +71,9 @@ logType string) *TailFile2 {
 	return tailFile
 }
 
-func (this *TailFile2) ReadMultiLine() ([]string,[]int64) {
+func (this *TailFile2) ReadMultiLine() ([]string, []int64) {
 	//1.先读取一大块内容到buffer中
 	this.readChunk()
-
 	//2.一行一行从buffer中读取出来
 	lines := make([]LineInfo, 0)
 	for ; ; {
@@ -81,7 +83,6 @@ func (this *TailFile2) ReadMultiLine() ([]string,[]int64) {
 		}
 		lines = append(lines, lineInfo)
 	}
-
 	//3.相等的时候，说明是buffer读满了，所以可能是最后一行那里被截断，这里把最后那行丢弃掉，留到下次读
 	if this.bufferCapacity == Buffer_Size {
 		for i := len(lines) - 1; i >= 0; i-- {
@@ -137,8 +138,17 @@ func (this *TailFile2) nextLine() (LineInfo) {
 			tempArray = append(tempArray, byte(c))
 		}
 	}
+
 	if len(tempArray) > 0 {
-		isMatch, _ := regexp.MatchString(this.NewLineStartPreRegular, string(tempArray))
+		var isMatch bool
+		if this.NewLineStartMatchMode == 0 {
+			isMatch = true
+		} else if this.NewLineStartMatchMode == 1 {
+			isMatch = (tempArray[0] == this.NewLineStartPreRegular[0])
+		} else {
+			isMatch, _ = regexp.MatchString(this.NewLineStartPreRegular, string(tempArray))
+		}
+
 		if len(tempArray) >= this.MaxLineSize {
 			//当一行超过最大限制的值时，为了防止下一步拼接，直接认为它是匹配正则的.
 			isMatch = true

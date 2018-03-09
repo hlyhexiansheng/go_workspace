@@ -16,11 +16,12 @@
         },
         "config": {
           "filterKey": "(.log$|.txt$|.tmp$)",
-          "newLineStartPreRegular": "",
+          "newLineStartPreRegular": "^\\[",
+          "newLineStartMatchMode": "2",
           "isReadFromEnd": "false",
           "maxLineSize": "10001",
-          "maxOnceReadCount":"10000",
-          "recursion":"true"
+          "maxOnceReadCount": "10000",
+          "recursion": "true"
         }
       }
     ]

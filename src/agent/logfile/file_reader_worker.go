@@ -85,6 +85,7 @@ func (this *FileReaderWorker) ResetTailFile() {
 
 		maxLineSize := this.configManager.GetIntConfigByWatcherDir(belong2Dir, "maxLineSize", 10000)
 		maxOnceReadCount := this.configManager.GetIntConfigByWatcherDir(belong2Dir, "maxOnceReadCount", 10000)
+		newLineStartMatchMode := this.configManager.GetIntConfigByWatcherDir(belong2Dir, "newLineStartMatchMode", 0)
 		newLineStartPreRegular := this.configManager.GetStringConfigByWatcherDir(belong2Dir, "newLineStartPreRegular", "")
 
 		appName := this.configManager.GetStringHeaderByWatcherDir(belong2Dir, "appName", "")
@@ -94,6 +95,7 @@ func (this *FileReaderWorker) ResetTailFile() {
 
 		tailFile := NewTailFile2(fileNode, fullName, belong2Dir,
 			offset,
+			newLineStartMatchMode,
 			newLineStartPreRegular,
 			maxLineSize,
 			maxOnceReadCount,
